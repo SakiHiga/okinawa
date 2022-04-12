@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- 文字コード！-->
+<meta charset="utf-8">
+
+<!-- ブラウザで表示されるタイトル !-->
+<title>
+	心、体ゆるり。癒しの沖縄一人旅
+</title>
+
+<!-- SEO対策に必要な記述。サーバーアップしたら必ず記述しましょう。
+<meta name="description" content="" />
+<meta name="keywords" content="" /> -->
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- スタイルシート -->
+	<link rel="stylesheet" href="reset.min.css" media="all">
+	<link rel="stylesheet" href="style.css" media="all">
+
+	<!-- スライダー -->
+	<link rel="stylesheet" href="slick/slick.css" media="all">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('.single-item').slick({
+				  autoplay: true,
+				  autoplaySpeed: 2000,
+				  responsive: [
+				  {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			      },
+				  {
+					breakpoint: 640,
+					settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				  }
+				  ]
+		});
+		 var scroll = new SmoothScroll('a[href*="#"]',{
+			speed: 800
+		});
+		// 解説：.drawer_menuの下にあるaタグをクリックしたら下記の処理をしてください
+			$('.drawer_menu a').on('click', function() {
+			// 解説：チェックボックスのチェックを外してください
+			  $('input').prop('checked', false);
+			});
+		});
+	</script>
+
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+<!-- ハンバーガーメニュー -->
+	<header>
+	  <!-- ドロワー -->
+	  <div class="drawer">
+	    <input class="drawer_checkbox" id="drawerCheckbox" type="checkbox" >
+	    <!-- ドロワーアイコン部分 -->
+	    <label class="drawer_icon" for="drawerCheckbox">
+	     	<span class="drawer_icon-item"></span>
+	    </label>
+	    <!-- 背景を暗く -->
+	    <label class="drawer_overlay" for="drawerCheckbox"></label>
+	    <!-- ドロワー内のメニュー -->
+	    <nav class="drawer_menu">
+	      <ul>
+	        <li >
+	          <a href="#travel">巡る</a>
+	        </li>
+	        <li>
+	          <a href="#eat">食べる</a>
+	        </li>
+	        <li>
+	          <a href="#stay">泊まる</a>
+	        </li>
+	        <li>
+	          <a href="#access">アクセス</a>
+	        </li>
+	      </ul>
+	    </nav>
+	  </div>
+	</header>
+<!-- main visual -->
+	<div class="key-visual">
+		<div>
+			<ul class="single-item">
+				<li><img src="images/key-visual.png"></li>
+				<li><img src="images/key-visual2.png"></li>
+				<li><img src="images/key-visual3.png"></li>
+				<li><img src="images/key-visual4.png"></li>
+			</ul>
+		</div>
+		<div class="key-visual_container">
+			<h1>
+				<img src="images/logo.png">
+			</h1>
+		</div>
+	</div>
+<!-- navigation -->
+	<div class="contents">
+		<div class="navigation">
+			<ul>
+				<li><a href="#travel"><img src="images/travel.png"></a></li>
+				<li><a href="#eat"><img src="images/eat.png"></a></li>
+				<li><a href="#stay"><img src="images/stay.png"></a></li>
+				<li><a href="#access"><img src="images/Access.png"></a></li>
+			</ul>
+		</div>
+
+		<div class="discription">
+			<img class="left" src="images/hibiscus.png">
+			<p>毎日忙しい日々が続くけど、たまにの休みは沖縄で</br>
+				よんなーよんなー（ゆっくり）お休みしてみない？</br>
+				忙しくて疲れた心と体を癒す、観光スポットや料理、</br>
+				お泊まりスポットを紹介します♩</p>
+			<img class="right" src="images/hibiscus2.png">
+		</div>
+<!-- theme-block1 -->
+		<div class="theme-block1" id="travel">
+			<div class="copy">
+				<h2 class="title">
+					<img src="images/logo_travel.png">
+				</h2>
+				<p>沖縄には自然や歴史あふれる観光スポットがたくさん。</br>
+					あふれる自然を堪能したいなら、</br>
+					「やんばる」と呼ばれる沖縄本島北部へ。</br>
+					世界遺産・歴史を堪能するなら、</br>
+					那覇・中城コースがおすすめです♩</br>
+					もちろん、フルで巡るのも全然アリ！</br>
+				</p>
+				<div class="theme-item-btn">
+					<a href="#">詳しくみる<i class="fas fa-angle-right"></i></a>
+				</div>
+			</div>
+				<img class="picture" src="images/pic_travel.png">	
+			<div class="theme-item-btn-sp">
+				<a href="#">詳しくみる<i class="fas fa-angle-right"></i></a>
+			</div>	
+		</div>
+<!-- theme-block2-reverse -->		
+		<div class="theme-block2-reverse" id="eat">
+			<div class="copy">
+				<h2 class="title">
+					<img src="images/logo_eat.png">
+				</h2>
+				<p>美味しいご飯は、心と体を癒すには不可欠。</br>
+					定番の沖縄グルメである沖縄そばや、</br>
+					外国の食文化の影響を受けたタコライス、</br>
+					島野菜を使ったヘルシー家庭料理まで</br>
+					バラエティ豊富な沖縄料理。</br>
+					沖縄料理で心も体も癒してみませんか？</br>
+				</p>
+				<div class="theme-item-btn">
+					<a href="#">詳しくみる<i class="fas fa-angle-right"></i></a>
+				</div>
+			</div>
+				<img class="picture" src="images/pic_eat.png">
+			<div class="theme-item-btn-sp">
+				<a href="#">詳しくみる<i class="fas fa-angle-right"></i></a>
+			</div>		
+		</div>
+<!-- theme-block3 -->
+		<div class="theme-block3" id="stay">
+			<div class="copy">
+				<h2 class="title">
+					<img src="images/logo_stay.png">
+				</h2>
+				<p>観光やお食事で心と体を癒したら、</br>
+					最後はオーシャンビューのホテルで</br>
+					ゆっくりして心と体を癒そう。</br>
+					ビーチサイドのホテルは景色もサービスも充実。</br>
+					自然を楽しみたい方、ホテルで優雅に過ごしたい方に</br>
+					おすすめです。</br>
+				</p>
+				<div class="theme-item-btn">
+					<a href="#">詳しくみる<i class="fas fa-angle-right"></i></a>
+				</div>
+			</div>
+				<img class="picture" src="images/pic_stay.png">
+			<div class="theme-item-btn-sp">
+				<a href="#">詳しくみる<i class="fas fa-angle-right"></i></a>
+			</div>	
+		</div>
+<!-- access to Okinawa -->
+		<div class="access" id="access">
+			<h2>
+				<img src="images/okinawa_access.png">
+			</h2>
+			<div class="access-contents">
+				<img src="images/okinawa.png">
+				<div class="access-text">
+					<p>沖縄本島へのアクセスは、</br>
+						全国から出ている直行便の利用が便利です♩
+					</p>
+					<img src="images/Fukidashi.png">
+					<ul>
+						<li><a href="#">北海道から</a></li>
+						<li><a href="#">関東から</a></li>
+						<li><a href="#">中部から</a></li>
+						<li><a href="#">中国から</a></li>
+						<li><a href="#">四国から</a></li>
+						<li><a href="#">九州から</a></li>
+					</ul>
+				</div>		
+			</div>
+		</div>
+<!-- cta section -->
+		<div class="cta-row">
+			<div class="cta-btn">
+				<a href="#">航空券を探す<i class="fas fa-angle-right"></i></a>
+			</div>
+			<div class="cta-btn">
+				<a href="#">ホテルを探す<i class="fas fa-angle-right"></i></a>
+			</div>
+			<div class="cta-btn">
+				<a href="#">ツアーを探す<i class="fas fa-angle-right"></i></a>
+			</div>
+		</div>
+	</div>
+<!-- 固定の予約ボタン -->
+	<div class="reservation">
+		<a href="#">
+			<img src="images/fix-button.png">
+		</a>
+	</div>
+<!-- footer -->
+	<footer>
+		<div class="footer-inner">
+			<h2>
+				<img src="images/logo.png">
+			</h2>
+			<div class="element">
+				<div class="footer-list">	
+					<h3>ツアーメニュー</h3>
+						<ul>
+							<li><a href="#">沖縄本島ツアー</a></li>
+							<li><a href="#">石垣島ぐるりツアー</a></li>
+							<li><a href="#">宮古島ぐるりツアー</a></li>
+						</ul>
+				</div>
+				<div class="footer-list">
+					<h3>ご利用ガイド</h3>
+						<ul>
+							<li><a href="#">よくある質問</a></li>
+							<li><a href="#">ツアーまでの流れ</a></li>
+							<li><a href="#">お得なチケット情報</a></li>
+						</ul>
+				</div>
+				<div class="footer-list">
+					<h3>沖縄観光情報</h3>
+						<ul>
+							<li><a href="#">沖縄本島エリア</a></li>
+							<li><a href="#">宮古島・石垣島エリア</a></li>
+							<li><a href="#">与那国島・西表島エリア</a></li>
+						</ul>
+				</div>	
+			</div>
+			<p>©2021 Saki Travel</p>
+		</div>
+	</footer>
+</body>
+</html>
+
